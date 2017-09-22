@@ -1,0 +1,317 @@
+@media only screen and (max-width: 1200px) {
+  .header .header__box .header__box_content {
+    margin-right: 20%;
+  }
+  .header .header__box .header__box_picture {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 149px;
+        -ms-flex: 1 1 149px;
+            flex: 1 1 149px;
+    background: url("../css/bg-img/bg-iphone-70.png") no-repeat;
+    max-width: 208px;
+    height: 412px;
+    -webkit-align-self: center;
+        -ms-flex-item-align: center;
+            align-self: center;
+  }
+  .header .header__box .header__box_picture .box_picture-wrap {
+    text-align: center;
+  }
+  .header .header__box .header__box_picture .box_picture-wrap img {
+    margin-bottom: 25px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .header .menu {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 25px;
+  }
+  .header .menu .navigation {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .menu .navigation li a {
+    line-height: 49px;
+    font-size: 1em;
+    padding: 0 15px;
+  }
+  .header .header__box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 50px 0 50px 0;
+  }
+  .header .header__box .header__box_content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 45%;
+        -ms-flex: 1 1 45%;
+            flex: 1 1 45%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 15%;
+    margin-top: 30px;
+  }
+  .subscribe {
+    font-size: 1rem;
+  }
+  .subscribe .subscribe_content {
+    padding: 100px 10%;
+  }
+  .subscribe .subscribe_content .subscribe__title {
+    text-transform: uppercase;
+    font-size: 1.5em;
+    line-height: 2em;
+    letter-spacing: 6px;
+    padding-bottom: 20px;
+    padding-top: 0;
+  }
+  .subscribe .subscribe_content .subscribe__desc {
+    font-size: 1.125em;
+    line-height: 2.25em;
+    letter-spacing: 0.18px;
+    text-align: center;
+  }
+  .subscribe .subscribe_content .subscribe__form_wrap {
+    padding: 90px 0 0 0;
+  }
+  .subscribe .subscribe_content .subscribe__form_wrap input[type="email"] {
+    width: 60%;
+    background: transparent;
+    height: 53px;
+    padding-left: 5%;
+  }
+  .subscribe .subscribe_content .subscribe__form_wrap input[type="submit"] {
+    width: 25%;
+    height: 55px;
+    padding: 0;
+    margin-left: 2%;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .header {
+    font-size: 0.8rem;
+  }
+  .header .menu {
+    padding-top: 5px;
+  }
+  .header .menu .navigation_js {
+    display: none;
+  }
+  .header .menu .navigation_js li a {
+    line-height: 40px;
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header .menu .mobile_header_click_js {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    background: url("../css/bg-img/menu.png") no-repeat center;
+    width: 32px;
+    height: 50px;
+  }
+  .header .header__box {
+    padding: 20px 0 20px 0;
+  }
+  .header .header__box .header__box_content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 40%;
+        -ms-flex: 1 1 40%;
+            flex: 1 1 40%;
+    margin-right: 15px;
+    margin-top: 0;
+  }
+  .header .header__box .header__box_content h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.3px;
+  }
+  .header .header__box .header__box_content p {
+    font-size: 1em;
+    line-height: 1.8em;
+  }
+  .header .header__box .header__box_content .header-button {
+    margin-top: 30px;
+    font-size: 1.125em;
+    letter-spacing: 0.7px;
+    padding: 3% 9%;
+  }
+  .header .header__box .header__box_picture {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 89px;
+        -ms-flex: 1 1 89px;
+            flex: 1 1 89px;
+    background: url("../css/bg-img/bg-iphone-30.png") no-repeat;
+    max-width: 89px;
+    height: 176px;
+  }
+  .header .header__box .header__box_picture .box_picture-wrap {
+    font-size: 0.7em;
+  }
+  .header .header__box .header__box_picture .box_picture-wrap img {
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+  }
+  .main {
+    font-size: 0.8rem;
+  }
+  .main .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .wrapper span {
+    color: #ff8400;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+    line-height: 60px;
+    font-size: 1.125em;
+    margin-top: 20px;
+  }
+  .main .wrapper .main__content {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 20px;
+  }
+  .main .wrapper .main__content .product-item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 1 190px;
+        -ms-flex: 1 1 190px;
+            flex: 1 1 190px;
+    letter-spacing: 0.18px;
+    padding: 20px 0;
+  }
+  .main .wrapper .main__content .product-item .product-image {
+    margin-bottom: 20px;
+  }
+  .subscribe {
+    font-size: 0.8rem;
+  }
+  .subscribe .subscribe_content {
+    padding: 20px 0;
+  }
+  .subscribe .subscribe_content .subscribe__title {
+    font-size: 1.5em;
+    line-height: 2em;
+    letter-spacing: 5px;
+  }
+  .subscribe .subscribe_content .subscribe__desc {
+    font-size: 1.1em;
+    line-height: 2em;
+  }
+  .subscribe .subscribe_content .subscribe__form_wrap {
+    padding: 20px 0 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .subscribe .subscribe_content .subscribe__form_wrap input[type="email"] {
+    width: 94%;
+    background: transparent;
+    height: 43px;
+    padding-left: 5%;
+  }
+  .subscribe .subscribe_content .subscribe__form_wrap input[type="submit"] {
+    width: 50%;
+    height: 45px;
+    margin-top: 20px;
+    margin-left: 0;
+  }
+  .footer {
+    font-size: 0.8rem;
+  }
+  .footer hr {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  .footer .wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 15px 15px;
+  }
+  .footer .footer__copyright {
+    line-height: 20px;
+    padding: 10px 0;
+  }
+  .footer .footer__social-network {
+    padding: 15px 0;
+  }
+  .footer .footer__social-network li:nth-child(2) {
+    background: url("../css/bg-img/sprites-social.png") no-repeat;
+    margin: 0 60px;
+  }
+}

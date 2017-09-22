@@ -1,0 +1,416 @@
+@import "libs";
+
+@bg_color: #fff;
+@color_header: #fff;
+@color_main: #5c5c5c;
+@color_main_h: #343434;
+@color_subscribe: #fff;
+@color_footer: #5c5c5c;
+
+//--- begin font-face ---
+@font-face {
+  font-family: 'Roboto', sans-serif;
+}
+@font-face {
+  font-family: 'Helvetica Neue Light', sans-serif;
+  src: url('../fonts/HelveticaNeueLight.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Helvetica Neue', sans-serif;
+  src: url('../fonts/HelveticaNeue.ttf') format('truetype');
+}
+//--- end font-face ---
+
+
+//--- begin general rules ---
+html, body {
+  font-family: 'Roboto',sans-serif;
+  min-width: 320px;
+  background-color: @bg_color;
+
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    //overflow: hidden;
+  }
+
+  h1, h2, h3, h4, h5 ,h6 {
+    text-align: center;
+    margin: 0;
+    padding: 0.6em 0;
+  }
+  p {
+    margin: 0;
+  }
+  ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a {
+    font-size: 1rem;
+  }
+  .clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+//--- end general rules ---
+
+//--- begin .header ---
+.header {
+  background: url("../css/bg-img/bg-header.png") no-repeat;
+  overflow: hidden;
+  font-size: 1rem;
+  color: @color_header;
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 25px;
+    .mobile_header_click_js {
+      display: none;
+    }
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          color: @color_header;
+          line-height: 49px;
+          font-size: 1.125em;
+          text-decoration: none;
+          border-bottom: 2px transparent solid;
+          padding: 0 30px;
+          transition: all 1s;
+          &:hover {
+            border-bottom: 2px @color_header solid;
+          }
+        }
+      }
+    }//--- .navigation ---
+  }//--- .menu ---
+  .header__box {
+    display: flex;
+    justify-content: space-between;
+    padding: 128px 0 103px 0;
+    .header__box_content {
+      flex: 1 1 48.46%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-right: 26.49%;
+      margin-top: 115px;
+      h3 {
+        font-size: 2.375em;
+        letter-spacing: 0.38px;
+        padding: 50px;
+      }
+      p {
+        font-size: 1.25em;
+        line-height: 1.8em;
+        letter-spacing: 0.2px;
+      }
+      .header-button {
+        margin-top: 95px;
+        text-decoration: none;
+        color: @color_header;
+        font-size: 1.125em;
+        text-transform: uppercase;
+        letter-spacing: 0.9px;
+        font-weight: 500;
+        display: inline-block;
+        padding: 3.9% 9.7%;
+        border: 1px solid @color_header;
+        transition: all 1s;
+        &:hover {
+          color: #fd6f3c;
+          background-color: rgba(255, 255, 255, 0.7) ;
+        }
+      }
+    }//--- .header__box_content ---
+    .header__box_picture {
+      flex: 1 1 297px;
+      background: url("../css/bg-img/bg-iphone.png") no-repeat;
+      background-size: cover;
+      width: 297px;
+      height: 593px;
+      position: relative;
+      .box_picture-wrap {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.125em;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        img {
+          margin-bottom: 25px;
+        }
+      }
+    }//--- .header__box_picture ---
+  }//--- .header__box ---
+}
+//--- end .header ---
+
+
+//--- begin .main ---
+.main {
+  font-size: 1rem;
+  color: @color_main;
+  background-color: @bg_color;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+      color: #ff8400;
+      text-transform: uppercase;
+      letter-spacing: 0.9px;
+      line-height: 68px;
+      font-size: 1.125em;
+      margin-top: 70px;
+    }
+    h2 {
+      font-size: 2.25em;
+      letter-spacing: 0.36px;
+    }
+    .main__content {
+      display: flex;
+      flex-wrap: wrap;
+      padding-top: 25px;
+      padding-bottom: 50px;
+      .product-item {
+        &:nth-child(1) {
+          &>.product-image {
+            background: url("../css/bg-img/sprites.png") no-repeat;
+            background-position-y: 0;
+            transition: all 1s;
+            &:hover {
+              background: url("../css/bg-img/bg-icons.png") no-repeat,
+              url("../css/bg-img/sprites.png") no-repeat;
+              background-position-y: 0;
+              transform: rotate(360deg)
+            }
+          }
+        }
+        &:nth-child(2) {
+          &>.product-image {
+            background: url("../css/bg-img/sprites.png") no-repeat;
+            background-position-y: -100px;
+            transition: all 1s;
+            &:hover {
+              background: url("../css/bg-img/bg-icons.png") no-repeat,
+              url("../css/bg-img/sprites.png") no-repeat;
+              background-position-y: -100px;
+              transform: rotate(360deg)
+            }
+          }
+        }
+        &:nth-child(3) {
+          &>.product-image {
+            background: url("../css/bg-img/sprites.png") no-repeat;
+            background-position-y: -200px;
+            transition: all 1s;
+            &:hover {
+              background: url("../css/bg-img/bg-icons.png") no-repeat,
+              url("../css/bg-img/sprites.png") no-repeat;
+              background-position-y: -200px;
+              transform: rotate(360deg)
+            }
+          }
+        }
+        &:nth-child(4) {
+          &>.product-image {
+            background: url("../css/bg-img/sprites.png") no-repeat;
+            background-position-y: -300px;
+            transition: all 1s;
+            &:hover {
+              background: url("../css/bg-img/bg-icons.png") no-repeat,
+              url("../css/bg-img/sprites.png") no-repeat;
+              background-position-y: -300px;
+              transform: rotate(360deg)
+            }
+          }
+        }
+        &:nth-child(5) {
+          &>.product-image {
+            background: url("../css/bg-img/sprites.png") no-repeat;
+            background-position-y: -400px;
+            transition: all 1s;
+            &:hover {
+              background: url("../css/bg-img/bg-icons.png") no-repeat,
+              url("../css/bg-img/sprites.png") no-repeat;
+              background-position-y: -400px;
+              transform: rotate(360deg)
+            }
+          }
+        }
+        &:nth-child(6) {
+          &>.product-image {
+            background: url("../css/bg-img/sprites.png") no-repeat;
+            background-position-y: -500px;
+            transition: all 1s;
+            &:hover {
+              background: url("../css/bg-img/bg-icons.png") no-repeat,
+              url("../css/bg-img/sprites.png") no-repeat;
+              background-position-y: -500px;
+              transform: rotate(360deg)
+            }
+          }
+        }
+      }
+      .product-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 1 1 33.33%;
+        letter-spacing: 0.18px;
+        padding: 50px 0;
+        .product-image {
+          width: 105px;
+          height: 100px;
+          //background: url("../css/bg-img/sprites.png") no-repeat;
+          margin-bottom: 40px;
+          //transition: all 1s;
+          //&:hover {
+          //  background: url("../css/bg-img/bg-icons.png") no-repeat,
+          //              url("../css/bg-img/sprites.png") no-repeat;
+          //  transform: rotate(360deg)
+          //}
+        }
+        .product-desc {
+          padding: 15px 30px 0 30px;
+          text-align: center;
+          font-size: 1.125em;
+          line-height: 1.33em;
+        }
+        //&:nth-child(1) {
+        //  background: url("../css/bg-img/sprites.png") no-repeat;
+        //}
+      }
+    }
+  }
+}
+//--- end .main ---
+
+
+//--- begin .subscribe ---
+.subscribe {
+  font-size: 1rem;
+  color: @color_subscribe;
+  background: url("../css/bg-img/bg-join.png") no-repeat;
+  .subscribe_content {
+    padding: 120px 14.5%;
+    .subscribe__title {
+      text-transform: uppercase;
+      font-size: 1.875em;
+      line-height: 2.26em;
+      letter-spacing: 6px;
+      padding-bottom: 20px;
+      padding-top: 0;
+    }
+    .subscribe__desc {
+      font-size: 1.125em;
+      line-height: 2.25em;
+      letter-spacing: 0.18px;
+      text-align: center;
+    }
+    .subscribe__form_wrap {
+      padding: 90px 0 0 0;
+      input[type="email"] {
+        width: 65%;
+        background: transparent;
+        border: 1px @color_subscribe solid;
+        height: 63px;
+        color: @color_subscribe;
+        padding-left: 5%;
+        &::placeholder {
+          color: @color_subscribe;
+        }
+      }
+      input[type="submit"] {
+        width: 25%;
+        background: @color_subscribe;
+        border: 1px @color_subscribe solid;
+        height: 65px;
+        padding: 0;
+        text-transform: uppercase;
+        color: #ff8400;
+        margin-left: 4%;
+        transition: all 1s;
+        &:hover {
+          background: transparent;
+          color: @color_subscribe;
+        }
+      }
+    }
+  }
+}
+//--- end .subscribe ---
+
+
+//--- begin .footer ---
+.footer {
+  background-color: @bg_color;
+  font-size: 1rem;
+  hr {
+    margin-top: 63px;
+    height: 3px;
+    background: #d8d8d8;
+    border: none;
+  }
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 15px;
+  }
+  .footer__copyright {
+    line-height: 30px;
+    color: @color_footer;
+  }
+  .footer__social-network {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    li {
+      a {
+        text-decoration: none;
+        display: inline-flex;
+        width: 31px;
+        height: 29px;
+      }
+      &:nth-child(1) {
+        //width: 31px;
+        //height: 40px;
+        background: url("../css/bg-img/sprites-social.png") no-repeat;
+        background-position-y: 0;
+        cursor: pointer;
+      }
+      &:nth-child(2) {
+        //width: 31px;
+        //height: 40px;
+        background: url("../css/bg-img/sprites-social.png") no-repeat;
+        background-position-y: -43px;
+        cursor: pointer;
+        margin: 0 40px;
+      }
+      &:nth-child(3) {
+        //width: 31px;
+        //height: 40px;
+        background: url("../css/bg-img/sprites-social.png") no-repeat;
+        background-position-y: -86px;
+        background-position-x: -4px;
+        cursor: pointer;
+      }
+    }//--- <li> ---
+  }//--- .social-network ---
+}
+//--- end .footer ---
+
+@import "media";
